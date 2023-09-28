@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRes"
+    android:background="#fce9b3">
+
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Reservations for"
+        android:textColor="#d42020"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_alignTop="@+id/txtRes"
+        android:id="@+id/txtRes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dining in"
+        android:textColor="#d42020"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtRes2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Date of Reservation (mm/dd/yyyy)"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Time of Reservation (mm:hh)"
+        android:inputType="time"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resGuestNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Number of Guest"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resTableNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resGuestNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Number of Table to be Reserved"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resTableNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Any Special Request"
+        android:inputType="textLongMessage"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtResEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/resSpecial"
+        />
+
+    <TextView
+        android:id="@+id/txtResPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtResEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnResConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtResPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#fccf51"
+        android:fontFamily="sans-serif-medium"
+        android:minWidth="150dp"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnResCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnResConfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#d42020"
+        android:fontFamily="sans-serif-medium"
+        android:minWidth="150dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

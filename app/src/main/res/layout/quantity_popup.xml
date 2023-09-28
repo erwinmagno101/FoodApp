@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="#fce9b3"
+    android:layout_gravity="bottom"
+    >
+
+    <TextView
+        android:id="@+id/txtQuantityItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Item Name"
+        android:textColor="#d42020"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/lineQuantity"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/txtQuantityItem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:layout_width="221dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        >
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#fccf51"
+            android:drawableRight="@drawable/ic_baseline_remove_24"
+            android:drawableTint="#66553c"
+            android:fontFamily="sans-serif-medium"
+            android:maxHeight="50dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="0dp"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtQuantityNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#d42020"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#fccf51"
+            android:drawableLeft="@drawable/ic_baseline_add_242"
+            android:drawableTint="#66553c"
+            android:fontFamily="sans-serif-medium"
+            android:maxHeight="50dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnConfirmAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#d42020"
+            android:fontFamily="sans-serif-medium"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

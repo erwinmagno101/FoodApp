@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="#fce9b3">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:minWidth="500dp"
+        android:minHeight="100dp" />
+
+
+    <Button
+        android:id="@+id/btnprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="675dp"
+        android:width="100dp"
+        android:backgroundTint="#fce9b3"
+        android:drawableBottom="@drawable/ic_baseline_person_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:maxHeight="0dp" />
+
+    <Button
+        android:id="@+id/btnhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnprofile"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="675dp"
+        android:width="100dp"
+        android:backgroundTint="#fce9b3"
+        android:drawableBottom="@drawable/ic_baseline_home_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:maxHeight="0dp"
+        android:text="Home" />
+
+
+    <Button
+        android:id="@+id/btnres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnhome"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="675dp"
+        android:width="100dp"
+        android:backgroundTint="#fce9b3"
+        android:drawableBottom="@drawable/ic_baseline_local_dining_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:maxHeight="0dp" />
+
+    <Button
+        android:id="@+id/btncart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnres"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="675dp"
+        android:width="100dp"
+        android:backgroundTint="#fce9b3"
+        android:drawableBottom="@drawable/ic_baseline_shopping_cart_24"
+        android:drawablePadding="0dp"
+        android:maxHeight="0dp"
+        android:drawableTint="#66553c"/>
+
+
+
+
+</RelativeLayout>

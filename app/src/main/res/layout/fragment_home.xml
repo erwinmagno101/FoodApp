@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="#fce9b3">
+
+
+    <TextView
+        android:id="@+id/txtDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Delivering to"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtUserDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#66553c"
+        android:fontFamily="sans-serif-medium"
+        android:maxWidth="300dp"
+        android:maxHeight="35dp"
+        android:minWidth="300dp"
+        android:scrollHorizontally="true"
+        android:text="Name of the User"
+        android:textColor="#d42020"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="0dp"
+        android:maxWidth="75dp"
+        android:maxHeight="50dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:drawableTint="#66553c"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/txtUserDel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#fccf51" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxWidth="350dp"
+                android:maxHeight="470dp"
+                android:minWidth="350dp"
+                android:minHeight="470dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Itadakimasu!!!"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/imgFumiko"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fumiko" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="What are you craving for?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnrecommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="200dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/like"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Recommended"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnburger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="102dp"
+                    android:layout_marginTop="200dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/burger"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Burger"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="194dp"
+                    android:layout_marginTop="200dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/icecream"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Ice
+                    cream"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnramen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="285dp"
+                    android:layout_marginTop="200dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/noodles"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Ramen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnpizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="310dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/pizza"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Pizza"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnbeverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="102dp"
+                    android:layout_marginTop="310dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/beverage"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Beverage"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnsunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="194dp"
+                    android:layout_marginTop="310dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/menu"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Sunday Menu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnReservations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="285dp"
+                    android:layout_marginTop="310dp"
+                    android:backgroundTint="#fccf51"
+                    android:drawableTop="@drawable/reservation"
+                    android:maxWidth="50dp"
+                    android:maxHeight="110dp"
+                    android:minHeight="110dp"
+                    android:text="Reservation"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="425dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="For ordering outside menu please contact"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="440dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="09364272691"
+                    android:textColor="#d42020"
+                    android:textStyle="bold" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#fce9b3"
+                android:minWidth="370dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chicken_noodles_1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="125dp"
+                    android:background="#fcde97"
+                    android:minWidth="370dp">
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#fccf51"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="70dp"
+                        android:minWidth="70dp"
+                        android:text="Add"
+                        android:textColor="#d42020" />
+
+                    <TextView
+                        android:id="@+id/txtItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="265dp"
+                        android:maxHeight="25dp"
+                        android:text="Item Name"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtItemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="265dp"
+                        android:maxHeight="25dp"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fried_chicken" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="375dp"
+                    android:background="#fcde97"
+                    android:minWidth="370dp">
+
+                    <Button
+                        android:id="@+id/btnAdd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#fccf51"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="70dp"
+                        android:minWidth="70dp"
+                        android:text="Add"
+                        android:textColor="#d42020" />
+
+                    <TextView
+                        android:id="@+id/txtItemName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="265dp"
+                        android:maxHeight="25dp"
+                        android:text="Item Name"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtItemPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxWidth="265dp"
+                        android:maxHeight="25dp"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

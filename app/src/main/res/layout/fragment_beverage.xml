@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beverage"
+    android:background="#fce9b3">
+
+    <Button
+        android:id="@+id/bevbtnBack"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#e8dcb0"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawableTint="@color/black" />
+
+    <TextView
+        android:id="@+id/txtCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Beverage"
+        android:textColor="#d42020"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/txtCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#fccf51" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="675dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fce9b3"
+            android:minWidth="370dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drinks1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="125dp"
+                android:background="#fcde97"
+                android:minWidth="370dp">
+
+                <Button
+                    android:id="@+id/bevbtnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#fccf51"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="70dp"
+                    android:minWidth="70dp"
+                    android:text="Add"
+                    android:textColor="#d42020" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Item Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drinks2" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="375dp"
+                android:background="#fcde97"
+                android:minWidth="370dp">
+
+                <Button
+                    android:id="@+id/bevbtnAdd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#fccf51"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="70dp"
+                    android:minWidth="70dp"
+                    android:text="Add"
+                    android:textColor="#d42020" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Item Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="500dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drinks3" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="610dp"
+                android:background="#fcde97"
+                android:minWidth="370dp">
+
+                <Button
+                    android:id="@+id/bevbtnAdd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#fccf51"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="70dp"
+                    android:minWidth="70dp"
+                    android:text="Add"
+                    android:textColor="#d42020" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Item Name"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/bevtxtItemPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxWidth="265dp"
+                    android:maxHeight="25dp"
+                    android:text="Price"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

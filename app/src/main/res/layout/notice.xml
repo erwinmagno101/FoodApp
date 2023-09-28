@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="#fce9b3"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Order Placed!"
+        android:textColor="#d42020"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_alignTop="@+id/txtPlaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Kindly Check Your Order At the Profile Page and Prepare the exact amount upon delivery."
+        android:textAlignment="center"
+        android:textColor="#d42020"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_alignTop="@+id/txtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textStyle="bold"
+        android:text="NOTE: This ORDER is not CANCELLABLE!"
+        android:textAlignment="center"
+        android:textColor="#d42020"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtNote"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#d42020"
+        android:fontFamily="sans-serif-medium"
+        android:text="Okay"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

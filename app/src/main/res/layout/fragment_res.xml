@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResFragment"
+    android:background="#fce9b3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Dining Reservation"
+        android:textColor="#d42020"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtEmptyRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="No Reservations"
+        android:textColor="#d42020"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/btnReservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:layout_gravity="right"
+        android:text="Add Reservation"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#d42020"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

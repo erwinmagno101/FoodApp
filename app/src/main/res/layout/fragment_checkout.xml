@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutFragment"
+    android:orientation="vertical"
+    android:background="#fce9b3">
+
+    <Button
+        android:id="@+id/btnchBack"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e8dcb0"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawableTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtDeliveringto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawableTint="#66553c"
+        android:fontFamily="sans-serif-medium"
+        android:text="Delivering to"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Name of User"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chUserAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Address of User"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chUserLandmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Landmark of User"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Date of the day"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/chTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Time of the day"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chDeliveryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Estimated Delivery Time"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/chTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="00 min"
+        android:textColor="#d42020"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/chInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="320dp"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Special Delivery Instruction"
+        android:inputType="textLongMessage"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/chCookingInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="320dp"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Add cooking instructions (optional)"
+        android:inputType="textLongMessage"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:layout_gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/chTotalPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Total: 00"
+        android:textColor="#d42020"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:layout_gravity="center"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:backgroundTint="#d42020"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

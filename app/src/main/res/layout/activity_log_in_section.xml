@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInSection"
+    android:background="#fce9b3">
+
+
+    <TextView
+        android:id="@+id/LogInTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#d42020"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/LoginEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LogInTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxWidth="200dp"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LoginEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:width="320dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textColorHint="#757272"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnShowlog"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LoginPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_visibility_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnLogIn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LoginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:width="150dp"
+        android:height="50dp"
+        android:backgroundTint="#fccf51"
+        android:fontFamily="sans-serif-medium"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnLogIn1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Don't have an account?"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignUp1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnLogIn1"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="54dp"
+        android:width="55dp"
+        android:height="30dp"
+        android:backgroundTint="#fce9b3"
+        android:fontFamily="sans-serif-medium"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#d42020"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnProceed"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSignUp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:height="30dp"
+        android:backgroundTint="#fce9b3"
+        android:fontFamily="sans-serif-medium"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="Proceed without Signing in"
+        android:textAllCaps="false"
+        android:textColor="#d42020"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#fce9b3">
+
+    <Button
+        android:id="@+id/btnOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#d42020"
+        android:drawableLeft="@drawable/ic_baseline_food_bank_24"
+        android:drawableTint="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:text="Orders"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/btnSignout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="#d42020"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="User Profile"
+        android:textColor="#d42020"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtUser"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="75dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userName"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/userEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#fccf51" />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/line1"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Contact Number"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/userMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="320dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Moblie Number"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHint="#757272"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userMobile"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Delivery Address"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/userAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="320dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Delivery Address"
+        android:inputType="textLongMessage"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHint="#757272"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtLandmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userAddress"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Nearest Landmark"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/userLandmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtLandmark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="320dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Nearest Landmark"
+        android:inputType="textLongMessage"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHint="#757272"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userLandmark"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="User Password"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="320dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="User Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHint="#757272"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/btnShowpass"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="50dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_visibility_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#66553c"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userPassword"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:backgroundTint="#4ebf32"
+        android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+        android:drawablePadding="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnUpdate"
+        android:layout_alignTop="@+id/userPassword"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:backgroundTint="#d42020"
+        android:drawableLeft="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="8dp" />
+
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="150dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_call_24"
+        android:drawableTint="#66553c"
+        android:fontFamily="sans-serif-medium"
+        android:text="Contact Us"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnContactUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="150dp"
+        android:backgroundTint="#fccf51"
+        android:drawableLeft="@drawable/ic_baseline_feedback_24"
+        android:fontFamily="sans-serif-medium"
+        android:text="Feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableTint="#66553c"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
